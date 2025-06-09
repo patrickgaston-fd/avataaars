@@ -1,9 +1,18 @@
 {
-  "name": "avataaars",
-  "version": "2.0.0",
-  "description": "React component for avataaars",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "name": "@fluentdoc/avataaars",
+  "version": "1.0.0",
+  "description": "Custom fork of Avataaars for FluentDoc with worldbuilding extensions",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickgaston-fd/avataaars"
+  },
+  "author": "Patrick Gaston",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "tsc"
   },
@@ -11,9 +20,6 @@
     "react",
     "avatar"
   ],
-  "repository": "git@github.com:fangpenlin/avataaars.git",
-  "author": "Fang-Pen Lin <hello@fangpenlin.com>",
-  "license": "MIT",
   "peerDependencies": {
     "react": "^17.0.0"
   },
