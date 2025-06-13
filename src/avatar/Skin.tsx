@@ -39,6 +39,7 @@ const Black = makeColor('Black', '#614335')
 const Ashen = makeColor('Ashen', '#b4ada7')
 const BlueGray = makeColor('BlueGray', '#a0b6c7')
 const Greenish = makeColor('Greenish', '#8baa67')
+const Red = makeColor('Red', '#C94141')
 
 export default class Skin extends React.Component<Props> {
   render () {
@@ -54,6 +55,7 @@ export default class Skin extends React.Component<Props> {
         <Ashen maskID={this.props.maskID} />
         <BlueGray maskID={this.props.maskID} />
         <Greenish maskID={this.props.maskID} />
+        <Red maskID={this.props.maskID} />
       </Selector>
     )
   }
