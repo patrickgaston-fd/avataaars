@@ -6,16 +6,16 @@ export interface Props {
   maskID: string
 }
 
-function makeColor(name: string, color: string) {
+function makeColor (name: string, color: string) {
   class ColorComponent extends React.Component<Props> {
-    render() {
+    render () {
       return (
         <g
-          id="Skin/👶🏽-03-Brown"
+          id='Skin/👶🏽-03-Brown'
           mask={`url(#${this.props.maskID})`}
           fill={color}>
-          <g transform="translate(0.000000, 0.000000)" id="Color">
-            <rect x="0" y="0" width="264" height="280" />
+          <g transform='translate(0.000000, 0.000000)' id='Color'>
+            <rect x='0' y='0' width='264' height='280' />
           </g>
         </g>
       )
@@ -35,8 +35,14 @@ const Brown = makeColor('Brown', '#D08B5B')
 const DarkBrown = makeColor('DarkBrown', '#AE5D29')
 const Black = makeColor('Black', '#614335')
 
+// FD Extended tones:
+const Ashen = makeColor('Ashen', '#b4ada7')
+const BlueGray = makeColor('BlueGray', '#a0b6c7')
+const Greenish = makeColor('Greenish', '#8baa67')
+const Red = makeColor('Red', '#C94141')
+
 export default class Skin extends React.Component<Props> {
-  render() {
+  render () {
     return (
       <Selector option={SkinOption} defaultOption={Light}>
         <Tanned maskID={this.props.maskID} />
@@ -46,6 +52,10 @@ export default class Skin extends React.Component<Props> {
         <Brown maskID={this.props.maskID} />
         <DarkBrown maskID={this.props.maskID} />
         <Black maskID={this.props.maskID} />
+        <Ashen maskID={this.props.maskID} />
+        <BlueGray maskID={this.props.maskID} />
+        <Greenish maskID={this.props.maskID} />
+        <Red maskID={this.props.maskID} />
       </Selector>
     )
   }

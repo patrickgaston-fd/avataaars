@@ -7,11 +7,11 @@ import { OptionContext, allOptions } from './options'
 export { default as Avatar, AvatarStyle } from './avatar'
 export { Option, OptionContext, allOptions } from './options'
 
-import {default as PieceComponent} from './avatar/piece';
+import {default as PieceComponent} from './avatar/piece'
 
 export interface Props {
   avatarStyle: string
-  className?: string;
+  className?: string
   style?: React.CSSProperties
   topType?: string
   accessoriesType?: string
@@ -25,9 +25,12 @@ export interface Props {
   eyebrowType?: string
   mouthType?: string
   skinColor?: string
-  pieceType?:string
-  pieceSize?:string
-  viewBox?:string
+  pieceType?: string
+  pieceSize?: string
+  viewBox?: string
+  earringType?: string
+  markingType?: string
+  auraType?: string
 }
 
 export default class AvatarComponent extends React.Component<Props> {

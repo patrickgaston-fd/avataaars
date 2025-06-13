@@ -4,6 +4,7 @@ import Eyebrow from './eyebrow'
 import Eyes from './eyes'
 import Mouth from './mouth'
 import Nose from './nose/Default'
+import Marking from '../marking'
 
 export default class Face extends React.Component {
   render () {
@@ -13,6 +14,7 @@ export default class Face extends React.Component {
         <Nose />
         <Eyes />
         <Eyebrow />
+        <Marking />
       </g>
     )
   }

@@ -2,8 +2,8 @@
   "name": "@fluentdoc/avataaars",
   "version": "1.0.0",
   "description": "Custom fork of Avataaars for FluentDoc with worldbuilding extensions",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/patrickgaston-fd/avataaars"
