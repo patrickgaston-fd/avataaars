@@ -1,6 +1,9 @@
+
 # Avataaars for FluentDoc
 
 A fork of the original [Avataaars](https://avataaars.com/) React component, extended and maintained by the [FluentDoc](https://fluentdoc.com) team to support enhanced avatar customization, worldbuilding traits, and identity expression for creative platforms.
+
+Created by Pablo Stanley, originally implemented as a React component by Fang-Pen Lin. This version has been extended and modernized by [Patrick Gaston](https://github.com/patrickgaston-fd) for the FluentDoc platform.
 
 Published packages are available at 👉 [https://www.npmjs.com/org/fluentdoc](https://www.npmjs.com/org/fluentdoc)
 
@@ -11,9 +14,13 @@ Published packages are available at 👉 [https://www.npmjs.com/org/fluentdoc](h
 ## ✨ Key Differences from Original
 
 - Scoped to `@fluentdoc/avataaars`
+- Added **new identity traits** for more diverse representation
 - Built to support **worldbuilding traits** (fantasy, sci-fi, cultural additions)
 - Maintained for use in **FluentDoc**, a platform for language creation & storytelling
-- More expressive facial and identity traits coming soon
+- New identity traits:
+    - 🧝 `earringType`: Hoop, Stud, Tribal
+    - 🧑‍🎨 `markingType`: Warpaint, Scar, Tattoo
+    - 🧑🏽 Expanded `skinColor`: Greenish, Ashen, BlueGray
 
 ---
 
@@ -54,6 +61,8 @@ export default function MyComponent() {
         eyebrowType="Default"
         mouthType="Smile"
         skinColor="Light"
+        earringType="Hoop"
+        markingType="Warpaint"
       />
     </div>
   )
@@ -81,6 +90,7 @@ export default function Pieces() {
       <Piece pieceType="clothe" pieceSize="100" clotheType="Hoodie" clotheColor="Red" />
       <Piece pieceType="graphics" pieceSize="100" graphicType="Skull" />
       <Piece pieceType="skin" pieceSize="100" skinColor="Brown" />
+      <Piece pieceType="marking" pieceSize="100" markingType="Tattoo" />
     </div>
   )
 }
@@ -90,7 +100,7 @@ export default function Pieces() {
 
 ## 🔧 Advanced Usage & Customization
 
-To build your own avatar editor, use the `Avatar` component directly along with option props.
+To build your own avatar editor, use the Avatar component directly along with option props.
 
 For inspiration, explore the original [Avataaars Generator](https://getavataaars.com/) or reference this fork’s additions in the `src/avatar` directory.
 
@@ -106,7 +116,7 @@ All FluentDoc-scoped packages are published at:
 
 ## 🧙 Future Plans
 
-- Fantasy traits (elf ears, glowing eyes, horns)
+- Additional fantasy traits (horns, elemental features)
 - Cultural headwear & clothing
 - Mood presets and dynamic expressions
 - World-themed packs for use across conlangs, character creation, and storytelling
